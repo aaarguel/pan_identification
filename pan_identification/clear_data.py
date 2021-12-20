@@ -62,7 +62,7 @@ def xml2csv(nameXML,nameCSV,predatorsCSV):
 
 
 def removechars(words):
-    words2erase = [';','|','\\','&#xD;','\n']
+    words2erase = [';','|','\\','\r','\n']
     words = words.rstrip()
     for w in words2erase:
         words=words.replace(w,'')
